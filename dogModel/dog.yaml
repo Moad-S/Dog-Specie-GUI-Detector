@@ -1,0 +1,22 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: python train.py --data coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← downloads here (7 MB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ../data  # dataset root dir
+train: images/train  # train images (relative to 'path') 128 images
+val: images/val  # val images (relative to 'path') 128 images
+test: images/test # test images (optional)
+
+# Classes
+nc: 120  # number of classes
+names: ['standard_poodle', 'wire-haired_fox_terrier', 'whippet', 'keeshond', 'beagle', 'toy_terrier', 'Scotch_terrier', 'Greater_Swiss_Mountain_dog', 'Pembroke', 'kuvasz', 'Saluki', 'German_shepherd', 'Bernese_mountain_dog', 'Border_collie', 'Australian_terrier', 'Irish_wolfhound', 'silky_terrier', 'Walker_hound', 'Lhasa', 'golden_retriever', 'bull_mastiff', 'kelpie', 'Mexican_hairless', 'Afghan_hound', 'basset', 'cocker_spaniel', 'Welsh_springer_spaniel', 'bloodhound', 'Boston_bull', 'Great_Pyrenees', 'Rottweiler', 'cairn', 'miniature_schnauzer', 'English_foxhound', 'papillon', 'curly-coated_retriever', 'Brabancon_griffon', 'Maltese_dog', 'Staffordshire_bullterrier', 'malamute', 'affenpinscher', 'dingo', 'English_springer', 'Ibizan_hound', 'English_setter', 'giant_schnauzer', 'collie', 'African_hunting_dog', 'Japanese_spaniel', 'Labrador_retriever', 'Eskimo_dog', 'Pekinese', 'bluetick', 'Sealyham_terrier', 'toy_poodle', 'soft-coated_wheaten_terrier', 'Yorkshire_terrier', 'EntleBucher', 'chow', 'Shih-Tzu', 'black-and-tan_coonhound', 'Italian_greyhound', 'Norwegian_elkhound', 'Old_English_sheepdog', 'briard', 'miniature_poodle', 'Bouvier_des_Flandres', 'basenji', 'Shetland_sheepdog', 'French_bulldog', 'boxer', 'Saint_Bernard', 'Border_terrier', 'vizsla', 'Irish_water_spaniel', 'Newfoundland', 'borzoi', 'Irish_terrier', 'Dandie_Dinmont', 'Samoyed', 'Lakeland_terrier', 'Norwich_terrier', 'pug', 'Scottish_deerhound', 'Tibetan_terrier', 'Airedale', 'Weimaraner', 'clumber', 'otterhound', 'schipperke', 'Leonberg', 'redbone', 'Appenzeller', 'Great_Dane', 'dhole', 'standard_schnauzer', 'Irish_setter', 'Siberian_husky', 'American_Staffordshire_terrier', 'Rhodesian_ridgeback', 'Chihuahua', 'Blenheim_spaniel', 'Bedlington_terrier', 'groenendael', 'Cardigan', 'Gordon_setter', 'Pomeranian', 'West_Highland_white_terrier', 'Kerry_blue_terrier', 'Sussex_spaniel', 'German_short-haired_pointer', 'Chesapeake_Bay_retriever', 'flat-coated_retriever', 'komondor', 'malinois', 'Tibetan_mastiff', 'Doberman', 'Norfolk_terrier', 'miniature_pinscher', 'Brittany_spaniel']  # class names
+
+
+# Download script/URL (optional)
+download: https://ultralytics.com/assets/coco128.zip
